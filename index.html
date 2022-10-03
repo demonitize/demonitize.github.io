@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta name="description" content="Offical Website of DEMONITIZED BOT" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/snackbar.css" />
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+
+    <div class="topnav"></div>
+  </head>
+  <body>
+    <script>
+      let params =
+        "scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,width=600,height=700,left=100,top=100";
+
+      function showSnackbar() {
+        // Get the snackbar DIV
+        var x = document.getElementById("snackbar");
+
+        // Add the "show" class to DIV
+        x.className = "show";
+
+        // After 3 seconds, remove the show class from DIV
+        setTimeout(function() {
+          x.className = x.className.replace("show", "");
+        }, 5000);
+      }
+    </script>
+
+    <h1>Hi there!</h1>
+
+    <p>
+      Welcome to the offical website for DEMONITIZED BOT, please select an
+      option below
+    </p>
+    <hr class="style-seven">
+    <div class="buttonArea selector" id="btnArea">
+    <input
+      type="button"
+      class="masterButton"
+      value="Add Discord bot!"
+      onclick="javascript:window.open('https://discordapp.com/oauth2/authorize?client_id=551194918853410817&permissions=8&redirect_uri=https%3A%2F%2Fdemonitized-bot-website.glitch.me%2Fsuccess.html&response_type=code&scope=bot%20identify%20guilds%20applications.commands', 'Add DEMONITIZED BOT to your Discord Server', params);"
+    />
+    <br />
+    <br />
+    <input
+      type="button"
+      class="twitchButton"
+      value="Add Twitch Bot!"
+      onclick="showSnackbar()"
+    />
+    </div>
+    <!-- onclick="javascript:window.open('https://dmtz-twitch-add.glitch.me/api/addbot', 'Add DEMONITIZED BOT to your Twitch Chat', params);" -->
+    <br />
+    <hr class="style-seven" />
+    <br />
+<!--     <a href="https://discordbotlist.com/bots/551194918853410817">
+      <img
+        width="380"
+        height="140"
+        src="https://discordbotlist.com/bots/551194918853410817/widget"
+        alt="DEMONITIZED BOT stats"
+      />
+    </a> -->
+    <p>
+      Need Support?
+      <a
+        href="/support"
+        onclick="javascript:alert('Please provide us with your User ID, and server ID (https://support.discordapp.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-)')"
+        >Contact</a
+      >
+      us
+    </p>
+    <div id="snackbar">Hey there! We're glad you want to add the Twitch Bot but it's not quite ready for public use :( Don't worry though! We'll make an announcement when it is ready!</div>
+  </body>
+</html>
